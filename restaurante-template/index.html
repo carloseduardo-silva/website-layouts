@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme:{
+                extend:{
+                    spacing:{
+                        "9": "90vh"
+                    }
+
+                }
+            }
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/022b925fb6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Restaurante Template</title>
+</head>
+<body>
+
+   <header class=" bg-gray-400  flex items-center flex-col ">
+
+    <div class=" flex p-3 items-center flex-col text-base md:flex-row">
+        <div class="p-3"><i class="fa-solid fa-phone mr-2"></i> (22) 12344-1122</div>
+
+        <div class="p-3"><i class="fa-solid fa-location-dot mr-2"></i> Av loremipsulum dolor n215</div>
+
+        <div class="p-3">
+            <i class="fa-brands fa-instagram mr-2"></i>
+            restaurantetemplate
+        </div>
+    </div>
+
+    <nav class="flex container items-center justify-between container px-7 md:w-11/12 py-5 ">
+        <span class="logo text-5xl"> LOG </span>
+
+        <div class="hidden flex gap-10 text-2xl md:flex ">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Contato</a>
+        </div>
+
+        <div class="md:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+
+   <div class="flex items-center justify-center flex-col text-6xl h-9 pb-12 md: pb-14 ">
+    <h1 class="great-vibes"> Bem Vindo</h1>
+    <h1> Restaurante </h1>
+   </div>
+
+   </header>
+
+   <section id="About" class=" flex flex-col  items-center justify-center px-5 py-10">
+
+    <div class="flex flex-col items-center text-6xl my-20 px-4 lg:my-28 title">
+        <h2 class="great-vibes">Sobre o</h2>
+        <h2>Restaurante</h2>
+        <div class="flex items-center gap-3 justify-center text-3xl mt-5">
+            <div class="line "></div>
+            <i class="fa-solid fa-utensils"></i>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center lg:items-start gap-7 lg:gap-8 lg:flex-row lg:w-10/12">
+        <img class="w-10/12  lg:w-3/6" src="/restaurante-template/images/about-img.jpg" alt="restaurant image inside part">
+
+        <div class="w-10/12 lg:w-3/6 text-lg lg:text-2xl">
+      
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam consequuntur architecto explicabo hic aliquam et doloribus reiciendis quibusdam numquam. Aliquam exercitationem quam accusantium provident delectus rem adipisci aut quidem ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minus nulla voluptatibus fuga enim delectus nostrum laborum eveniet molestias quia aut impedit numquam beatae, repellendus laudantium omnis a? Rerum, nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, repellendus! Eum doloribus atque, facilis distinctio perferendis modi magni voluptatum facere.</p>
+        </div>
+    </div>
+
+   </section>
+
+   <section id="parallax" class="flex flex-col items-center justify-center px-5 py-24 my-20 gap-8 ">
+
+    <div class="flex flex-col items-center text-6xl px-4 my-2 title">
+        <h2 class="great-vibes">Sobre o</h2>
+        <h2>Restaurante</h2>
+        <div class="flex items-center gap-3 justify-center text-3xl mt-5">
+            <div class="line "></div>
+            <i class="fa-solid fa-utensils"></i>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <p class="w-4/6 text-center text-2xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni nemo quis iure totam maiores eius aspernatur voluptatum</p>
+
+   </section>
+
+   <section id="Menu" class="flex flex-col items-center justify-center px-5 py-10 gap-8">
+
+    <div class="flex flex-col items-center text-6xl my-10 px-4 lg:my-18 title">
+        <h2 class="great-vibes">Descubra nosso</h2>
+        <h2>Menu</h2>
+        <div class="flex items-center gap-3 justify-center text-3xl mt-5">
+            <div class="line "></div>
+            <i class="fa-solid fa-book"></i>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center">
+
+        <div class="flex flex-col items-center gap-2 my-8">
+            <h2 class="text-4xl">TAL TITULO</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="content flex flex-col items-center gap-6">
+
+            <div class="w-3/5">
+                <div class="flex flex-row items-center">
+                    <h4 class="text-xl">Subtítulo</h4>
+                    <div class="subtitle-line"></div>
+                </div>
+                <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+            </div>
+
+            
+          
+
+        </div>
+
+    </div>
+
+
+
+   </section>
+
+    
+</body>
+</html>

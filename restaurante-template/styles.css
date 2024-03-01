@@ -1,0 +1,42 @@
+.great-vibes {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .kaushan {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .line{
+    width: 160px;
+    border-bottom: 2px solid rgb(246, 209, 2);
+    border-radius: 5px;
+  }
+
+  .title-line{
+    width: 30px;
+    border-bottom: 2px solid rgb(246, 209, 2);
+    border-radius: 5px;
+  }
+
+  .subtitle-line{
+    width: 160px;
+    border-bottom: 2px solid rgba(190, 190, 190, 0.704);
+    border-radius: 5px;
+  }
+
+  section#parallax{
+    background-image: url('images/parallax-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
+  }
+
+
+    

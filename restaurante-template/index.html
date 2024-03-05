@@ -10,7 +10,9 @@
                 extend:{
                     spacing:{
                         "9": "90vh"
-                    }
+                    },
+
+                
 
                 }
             }
@@ -22,12 +24,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles.css">
     <title>Restaurante Template</title>
 </head>
 <body>
 
-   <header class=" bg-gray-400  flex items-center flex-col ">
+   <header class=" bg-gray-900 text-white  flex items-center flex-col ">
 
     <div class=" flex p-3 items-center flex-col text-base md:flex-row">
         <div class="p-3"><i class="fa-solid fa-phone mr-2"></i> (22) 12344-1122</div>
@@ -41,9 +44,9 @@
     </div>
 
     <nav class="flex container items-center justify-between container px-7 md:w-11/12 py-5 ">
-        <span class="logo text-5xl"> LOG </span>
+        <span class="logo text-5xl fadeFromLeft"> LOGO </span>
 
-        <div class="hidden flex gap-10 text-2xl md:flex ">
+        <div class="hidden flex gap-10 text-2xl md:flex fadeFromRight ">
             <a href="#">Home</a>
             <a href="#">Menu</a>
             <a href="#">Contato</a>
@@ -56,7 +59,7 @@
     </nav>
 
 
-   <div class="flex items-center justify-center flex-col text-6xl h-9 pb-12 md: pb-14 ">
+   <div class="flex items-center justify-center flex-col text-6xl h-9 pb-12 md: pb-14 fadeIn">
     <h1 class="great-vibes"> Bem Vindo</h1>
     <h1> Restaurante </h1>
    </div>
@@ -65,7 +68,7 @@
 
    <section id="About" class=" flex flex-col  items-center justify-center px-5 py-10">
 
-    <div class="flex flex-col items-center text-6xl my-20 px-4 lg:my-28 title">
+    <div class="flex-col items-center text-5xl md:text-6xl my-20 px-4 lg:my-28 title none fadeIn2">
         <h2 class="great-vibes">Sobre o</h2>
         <h2>Restaurante</h2>
         <div class="flex items-center gap-3 justify-center text-3xl mt-5">
@@ -75,7 +78,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center lg:items-start gap-7 lg:gap-8 lg:flex-row lg:w-10/12">
+    <div class=" flex-col items-center lg:items-start gap-7 lg:gap-8 lg:flex-row lg:w-10/12 none fadeIn2">
         <img class="w-10/12  lg:w-3/6" src="/restaurante-template/images/about-img.jpg" alt="restaurant image inside part">
 
         <div class="w-10/12 lg:w-3/6 text-lg lg:text-2xl">
@@ -86,9 +89,9 @@
 
    </section>
 
-   <section id="parallax" class="flex flex-col items-center justify-center px-5 py-24 my-20 gap-8 ">
+   <section id="parallax" class="flex flex-col  items-center justify-center px-5 py-24 my-20 gap-8 ">
 
-    <div class="flex flex-col items-center text-6xl px-4 my-2 title">
+    <div class="none flex-col items-center text-5xl md:text-6xl px-4 my-2 title fadeIn">
         <h2 class="great-vibes">Sobre o</h2>
         <h2>Restaurante</h2>
         <div class="flex items-center gap-3 justify-center text-3xl mt-5">
@@ -98,13 +101,13 @@
         </div>
     </div>
 
-    <p class="w-4/6 text-center text-2xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni nemo quis iure totam maiores eius aspernatur voluptatum</p>
+    <p class="none fadeIn w-4/6 text-center text-2xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non magni nemo quis iure totam maiores eius aspernatur voluptatum</p>
 
    </section>
 
-   <section id="Menu" class="flex flex-col items-center justify-center px-5 py-10 gap-8">
+   <section id="Menu" class="flex flex-col  items-center justify-center px-5 py-10 pb-28 gap-8">
 
-    <div class="flex flex-col items-center text-6xl my-10 px-4 lg:my-18 title">
+    <div class="none fadeIn2 flex-col items-center text-5xl md:text-6xl my-10 px-4 lg:my-18 title">
         <h2 class="great-vibes">Descubra nosso</h2>
         <h2>Menu</h2>
         <div class="flex items-center gap-3 justify-center text-3xl mt-5">
@@ -114,34 +117,248 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center justify-center">
-
-        <div class="flex flex-col items-center gap-2 my-8">
-            <h2 class="text-4xl">TAL TITULO</h2>
-            <div class="title-line"></div>
-        </div>
-
-        <div class="content flex flex-col items-center gap-6">
-
-            <div class="w-3/5">
-                <div class="flex flex-row items-center">
-                    <h4 class="text-xl">Subtítulo</h4>
-                    <div class="subtitle-line"></div>
-                </div>
-                <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+    <div class="none fadeIn2 flex-col md:flex-row gap-24 md:gap-0 lg:w-4/5">
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col items-center gap-2 my-8">
+                <h2 class="text-4xl">TAL TITULO 1</h2>
+                <div class="title-line"></div>
             </div>
-
-            
-          
-
+            <div class="content flex flex-col items-center gap-6">
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+        
+        
+            </div>
         </div>
 
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col items-center gap-2 my-8">
+                <h2 class="text-4xl">TAL TITULO 2</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="content flex flex-col items-center gap-6">
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex flex-row items-center ">
+                        <h4 class="text-xl">Subtítulo</h4>
+                        <div class="subtitle-line"></div>
+                    </div>
+                    <p class="text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos vitae dolore, numquam autem reiciendis.</p>
+                </div>
+        
+        
+            </div>
+        </div>
     </div>
 
 
 
    </section>
 
+   <section id="Fatos" class="flex flex-col items-center px-5  py-24 lg:pb-28 bg-gray-900 text-white gap-16">
+
+    <div class="none fadeIn2 flex-col items-center text-5xl md:text-6xl  px-4 lg:my-18 title"> 
+        <h2 class="great-vibes text-yellow-300">Fatos sobre o </h2>
+        <h2>Restaurante</h2>
+        <div class="flex items-center gap-3 justify-center text-3xl mt-5">
+            <div class="line "></div>
+            <i class="fa-solid fa-star"></i>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div id="fatos-items" class="flex flex-col lg:flex-row gap-24 py-4 pb-6 lg:gap-32">
+
+        <div class="none fadeUp flex-col  items-center">
+            <div class="text-7xl"><i class="fa-solid fa-calendar-days text-yellow-300"></i> +10</div>
+            <p>ANOS</p>
+        </div>
+
+        <div  class="none fadeUp flex-col  items-center">
+            <div class="text-7xl"><i class="fa-solid fa-thumbs-up text-yellow-300"></i> +1000</div>
+            <p>DEPOIMENTOS DE CLIENTES SATISFEITOS</p>
+        </div>
+
+        <div  class="none fadeUp flex-col  items-center">
+            <div class="text-7xl"><i class="fa-solid fa-book text-yellow-300"></i> +50</div>
+            <p>OPÇÕES EM NOSSO CARDÁPIO</p>
+        </div>
+
+    </div>
+
+
+   </section>
+
+   <section id="Depoimentos" class="flex flex-col items-center px-5 py-20 lg:pb-32 gap-16">
     
+    <div class="none fadeIn flex-col items-center text-5xl md:text-6xl my-10 px-4 lg:my-18 title">
+        <h2 class="great-vibes">Depoimentos de nossos</h2>
+        <h2>Clientes</h2>
+        <div class="flex items-center gap-3 justify-center text-3xl mt-5">
+            <div class="line "></div>
+            <i class="fa-solid fa-comment"></i>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide text-3xl">1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex nemo vero assumenda deleniti eveniet vel quas provident laborum possimus et voluptatem voluptatum cum, dicta velit, adipisci facilis expedita fugiat?
+            
+          </div>
+          <div class="swiper-slide text-3xl">2- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex nemo vero assumenda deleniti eveniet vel quas provident laborum possimus et voluptatem voluptatum cum, dicta velit, adipisci facilis expedita fugiat?</div>
+          <div class="swiper-slide text-3xl">3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex nemo vero assumenda deleniti eveniet vel quas provident laborum possimus et voluptatem voluptatum cum, dicta velit, adipisci facilis expedita fugiat?</div>
+          <div class="swiper-slide text-3xl">4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex nemo vero assumenda deleniti eveniet vel quas provident laborum possimus et voluptatem voluptatum cum, dicta velit, adipisci facilis expedita fugiat?</div>
+          <div class="swiper-slide text-3xl">5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex nemo vero assumenda deleniti eveniet vel quas provident laborum possimus et voluptatem voluptatum cum, dicta velit, adipisci facilis expedita fugiat?</div>
+         
+        
+        </div>
+        
+        <div class="swiper-pagination"></div>
+      </div>
+
+
+   </section>
+
+   <section id="ContactandLocation" class="flex flex-col lg:flex-row items-center px-5 py-10 justify-center gap-28 lg:gap-24">
+
+    <div class="flex flex-col py-3 px-5">
+
+        <div class="flex flex-col items-center text-5xl md:text-6xl my-10 px-4 lg:my-18 title">
+            <h2 class="great-vibes">Fale</h2>
+            <h2>Conosco</h2>
+            <div class="flex items-center gap-3 justify-center text-3xl mt-5">
+                <div class="line "></div>
+                <i class="fa-solid fa-message"></i>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-8">
+
+            <div class="p-3 text-2xl"><i class="fa-solid fa-phone mr-2"></i> <a href="#">(22) 12344-1122</a></div>
+
+            <div class="p-3 text-2xl">   <i class="fa-brands fa-instagram mr-2"></i> <a href="#">@restauranteLayout</a></div>
+
+            <div class="p-3 text-2xl"><i class="fa-brands fa-facebook mr-2"></i><a href="#">@restauranteLayoutFB</a></div>
+
+            <div class="p-3 text-2xl"> <i class="fa-solid fa-utensils mr-2"></i> <a href="">Restaurante Layout</a></div>
+
+           
+         
+
+        </div>
+
+    </div>
+
+
+    <div class="flex flex-col py-3 px-5">
+
+        <div class="flex flex-col items-center text-5xl md:text-6xl my-10 px-4 lg:my-18 title">
+            <h2 class="great-vibes">Onde</h2>
+            <h2>Estamos</h2>
+            <div class="flex items-center gap-3 justify-center text-3xl mt-5">
+                <div class="line "></div>
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.573249926114!2d-46.626113090594124!3d-23.69121456628398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce44fa17b4e811%3A0x6bc334d61f455895!2sShopping%20Pra%C3%A7a%20da%20Mo%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1709648542743!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    
+
+   </section>
+
+
+   <footer class="flex items-center justify-center text-lg p-7"> Desenvolvildo por Carlos Eduardo.</footer>
+
+
+
+
+
+
+   <script src="./index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       spaceBetween: 30,
+       centeredSlides: true,
+       autoplay: {
+         delay: 2500,
+         disableOnInteraction: false,
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
 </body>
 </html>

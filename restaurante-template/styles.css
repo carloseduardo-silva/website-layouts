@@ -54,18 +54,7 @@
 
   }
 
-    .notShow{
-      filter: blur(15px);
-      transition: all 0.75s;
-      opacity: 0;
-    }
-
-    .show{
-      filter: blur(0px);
-      transition: all 0.75s;
-      opacity: 1;
-      animation: fadeUp 1000ms;
-    }
+    
  
  
 
@@ -112,7 +101,7 @@
     background-image: url('images/parallax-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: none;
     color: white;
 
   }
@@ -154,6 +143,26 @@
     iframe{
       width:300px;
       height:300px;
+    }
+    
+  }
+
+  @media (min-width:1000px) {
+    .notShow{
+      filter: blur(15px);
+      transition: all 0.75s;
+      opacity: 0;
+    }
+
+    .show{
+      filter: blur(0px);
+      transition: all 0.75s;
+      opacity: 1;
+      animation: fadeUp 1000ms;
+    }
+
+    section#parallax{
+      background-attachment: fixed;
     }
     
   }

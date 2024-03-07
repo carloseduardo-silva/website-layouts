@@ -8,7 +8,9 @@ class indexController {
         this.counterYear = document.querySelector('#counterYear')
         this.counterClient = document.querySelector('#counterClient')
         this.counterMenu = document.querySelector('#counterMenu')
-
+        this.menuHamburguer = document.querySelector('#menuHamburguer')
+        this.navModal = document.querySelector('#navModal')
+        this.closeModal = document.querySelector('#closeModal')
 
         this.init()
       
@@ -18,9 +20,18 @@ class indexController {
 
     init(){
         this.observe()
+        
+        this.menuHamburguer.addEventListener("click", () =>{
+            this.menuHamburguerToggle()
+        })
+
+         this.closeModal.addEventListener("click", () =>{
+            this.menuHamburguerToggle()
+        })
        
 
     }
+
 
 
     observe(){
@@ -43,7 +54,7 @@ class indexController {
         
         const counterObserer = new IntersectionObserver((entries) =>{
             if(entries[0].isIntersecting){
-                console.log(entries)
+                
 
                 this.countingAnimation(1, 10, 1, 320, this.counterYear)
                 this.countingAnimation(0, 1000, 10, 30, this.counterClient)
@@ -70,6 +81,19 @@ class indexController {
         increment(initial, end)
 
 
+    }
+
+    menuHamburguerToggle(){
+        if(this.navModal.classList.contains('hidden')){
+
+            this.navModal.classList.remove('hidden')
+            this.navModal.classList.add('flex')
+        }
+        else{
+            this.navModal.classList.add('hidden')
+            this.navModal.classList.remove('flex')
+        }
+       
     }
     
 }

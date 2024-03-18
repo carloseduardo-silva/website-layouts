@@ -14,6 +14,15 @@ nav a:hover{
     cursor: pointer;
 }
 
+
+button:hover{
+    transform: scale(1.1);
+    transition: 250ms;
+    cursor: pointer;
+    background-color: rgba(231, 231, 231, 0.678);
+    border: 2px solid rgb(255, 255, 255);
+}
+
 #header{
  
     height: 101vh;
@@ -30,7 +39,7 @@ nav a:hover{
 }
 
 iframe{
-    width: 300px;
+   width: 90%;
     height: 400px;
 }
 
@@ -41,6 +50,13 @@ iframe{
         width: 500px;
         height: 400px;
     }
+
+    #formContainer{
+        width: 520px;
+       
+    }
+
+ 
 
 }
 

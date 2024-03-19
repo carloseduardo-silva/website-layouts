@@ -38,6 +38,10 @@ button:hover{
     cursor: pointer;
 }
 
+p{
+    font-size: 18px;
+}
+
 iframe{
    width: 90%;
     height: 400px;
